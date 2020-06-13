@@ -1,4 +1,4 @@
-import { INCREASE_QUANTITY, DECREASE_QUANTITY } from "./types";
+import { INCREASE_QUANTITY, DECREASE_QUANTITY } from "./actionTypes";
 
 export const productQuantity = (action, name) => {
   return (dispatch) => {

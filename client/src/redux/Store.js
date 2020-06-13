@@ -11,5 +11,10 @@ const Store = createStore(
   initialState,
   composeWithDevTools(applyMiddleware(...middleware))
 );
+//can be also done with
+// const Store = createStore(
+//     rootReducer,
+//     applyMiddleware(thunk)
+// );
 
-export default Store;
+export default createStore(rootReducer);

@@ -1,4 +1,4 @@
-import { ADD_PRODUCT_CART } from "./types";
+import { ADD_PRODUCT_CART } from "./actionTypes";
 
 export const addToCart = (productName) => {
   return (dispatch) => {

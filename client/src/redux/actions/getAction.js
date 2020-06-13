@@ -1,4 +1,4 @@
-import { GET_NUMBERS_CART } from "./types";
+import { GET_NUMBERS_CART } from "./actionTypes";
 export const getNumbers = () => {
   return (dispatch) => {
     console.log("getting all cart numbers");

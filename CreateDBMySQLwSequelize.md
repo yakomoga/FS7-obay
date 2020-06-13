@@ -5,5 +5,5 @@ This will:
 
 - Create a model file user in models folder;
 - Create a migration file with name like XXXXXXXXXXXXXX-create-User.js in migrations folder.
+if you use buit in migration then you have to run ` npx sequelize-cli db:migrate`
 If you want to use sequelize-auto-migration you need to install the latest build stable `yarn add github:scimonster/sequelize-auto-migrations#a063aa6535a3f580623581bf866cef2d609531ba`
-if you use buit in migration then you have to run ``

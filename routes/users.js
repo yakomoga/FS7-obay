@@ -65,16 +65,16 @@ router.post(`/login`, async function (req, res, next) {
   }
 });
 
-// Test protected route
-// router.get(
-//   "/protected",
-//   passport.authenticate("jwt", { session: false }),
-//   function (req, res) {
-//     res.json({
-//       msg: "Congrats! You are seeing this because you are authorized",
-//     });
-//   }
-// );
+//Test protected route
+router.get(
+  "/protected",
+  passport.authenticate("jwt", { session: false }),
+  function (req, res) {
+    res.json({
+      msg: "Congrats! You are seeing this because you are authorized",
+    });
+  }
+);
 
 // retrieve user by id once it has been authenticated
 // findById
@@ -82,7 +82,7 @@ router.get(
   "/profile",
   passport.authenticate("jwt", { session: false }),
   function (req, res) {
-    // console.log(req.user);
+    console.log(req.user);
     res.json({
       msg: "Congrats! You are seeing this because you are authorized",
       user: req.user,
